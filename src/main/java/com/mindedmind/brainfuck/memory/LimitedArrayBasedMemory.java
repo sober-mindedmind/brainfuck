@@ -16,6 +16,6 @@ public class LimitedArrayBasedMemory extends AbstractMemory
 
 	@Override public void write(int pointer, int data)
 	{
-		memory[pointer] = data;
+		memory[pointer] = prepareData(data);
 	}
 }
